@@ -45,6 +45,8 @@ do
 done
 read -p "How many meals are you planning this week? [1-15]" total_meals
 
+# This whole bit obviously needs reworking in the form of a for loop
+
 case $total_meals in
 	1) 
 		echo ${Meals[$((RANDOM %= $((${#Meals[@]}))))] } # Prints a random element from the array
